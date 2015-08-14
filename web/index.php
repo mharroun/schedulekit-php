@@ -15,7 +15,7 @@ use OpenTok\OpenTok;
 /* ------------------------------------------------------------------------------------------------
  * Configuration - pull credentials from env or config.ini
  * -----------------------------------------------------------------------------------------------*/
-$config_array = parse_ini_file("../config.ini");
+$config_array = parse_ini_file("config.ini");
 $mysql_url = getenv("CLEARDB_DATABASE_URL") ? : $config_array['MYSQL_URL'];
 $gmail_user = getenv('GMAIL_USER') ? : $config_array['GMAIL_USER'];
 $gmail_pw   = getenv('GMAIL_PW') ? : $config_array['GMAIL_PW'];        // SMTP account password
